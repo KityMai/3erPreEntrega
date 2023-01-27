@@ -1,0 +1,20 @@
+h1 {
+    color: $textcolor;
+    margin-top: 50px !important; 
+    margin-left: 50px;
+}
+
+h2 {
+    color: $textcolor;
+    padding: 15px;
+}
+
+.texto {
+    .texto-lectura {
+        color: $textcolor;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 800px;
+    }
+}

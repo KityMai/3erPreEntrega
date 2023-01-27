@@ -1,0 +1,11 @@
+header{
+    background-color: $maincolor;
+
+    .navbar {
+        .nav-item.active a,
+        .nav-item a:hover {
+        font-weight: 700;
+        color: $textcolor !important;
+    }
+}
+}
