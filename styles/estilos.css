@@ -32,6 +32,7 @@ h1 {
 }
 
 .titulo {
+  letter-spacing: 0.05em;
   animation: tracking-in-expand 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
 @keyframes tracking-in-expand {
@@ -58,11 +59,15 @@ h1 {
   color: #E3E3E3;
 }
 .servicios_contenido .numero {
-  font-size: 12px;
-  line-height: 160%;
+  font-size: 14px;
+  text-transform: inherit 5;
+  letter-spacing: 0.15em;
 }
 .servicios_contenido .subtitulo_servicios {
-  font-weight: 700;
+  font-weight: 600;
+  color: #BB86FC;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .servicios_contenido .parrafo_servicios {
   color: #B9B9B9;
@@ -128,9 +133,8 @@ h1 {
 .conjuntoservicios .grid {
   display: grid;
   grid-template-columns: auto auto;
-  padding-left: 300px;
-  padding-right: 300px;
-  padding-top: 200px;
+  padding: 0 300px 50px 300px;
+  margin: 150px 0 200px 0;
 }
 .conjuntoservicios .grid .servicios_imagen {
   padding-right: 20px;

@@ -4,10 +4,9 @@
     .grid {
         display: grid;
         grid-template-columns: auto auto;
-        padding-left: 300px;
-        padding-right: 300px;
-        padding-top: 200px;
-    
+        padding: 0 300px 50px 300px;
+        margin: 150px 0 200px 0;
+
         .servicios_imagen {
             padding-right: 20px;
         

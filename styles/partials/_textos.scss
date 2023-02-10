@@ -5,6 +5,7 @@ h1 {
 }
 
 .titulo {
+    letter-spacing: 0.05em;
     -webkit-animation:tracking-in-expand 1.5s cubic-bezier(.68,-.55,.265,1.55) both;animation:tracking-in-expand 1.5s cubic-bezier(.68,-.55,.265,1.55) both
 }
 
@@ -24,12 +25,16 @@ h1 {
     color: $textcolor;
 
     .numero {
-        font-size: 12px;
-        line-height: 160%;
+        font-size: 14px;
+        text-transform: inherit 5;
+        letter-spacing: 0.15em;
     }
 
     .subtitulo_servicios {
-        font-weight: 700;
+        font-weight: 600;
+        color: $acentcolor;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 
     .parrafo_servicios {
