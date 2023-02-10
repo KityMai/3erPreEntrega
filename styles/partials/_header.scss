@@ -5,7 +5,12 @@ header{
         .nav-item.active a,
         .nav-item a:hover {
         font-weight: 700;
-        color: $textcolor !important;
+        color: $acentcolor!important;
+        }
+
+        a {
+            color: $textcolor !important;
+        }
     }
 }
-}
+

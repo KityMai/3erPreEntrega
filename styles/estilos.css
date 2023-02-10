@@ -8,7 +8,9 @@
 
 body {
   background-color: #121212 !important;
+  display: grid;
   min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -17,22 +19,35 @@ header {
 header .navbar .nav-item.active a,
 header .navbar .nav-item a:hover {
   font-weight: 700;
-  color: #ffffff !important;
+  color: #BB86FC !important;
+}
+header .navbar a {
+  color: #E3E3E3 !important;
 }
 
 h1 {
-  color: #ffffff;
+  color: #E3E3E3;
   margin-top: 50px !important;
   margin-left: 50px;
 }
 
-h2 {
-  color: #ffffff;
-  padding: 15px;
+.titulo {
+  animation: tracking-in-expand 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
-
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .texto .texto-lectura {
-  color: #ffffff;
+  color: #E3E3E3;
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -49,12 +64,12 @@ h2 {
   gap: 20px;
 }
 .intro h3 {
-  color: #ffffff;
+  color: #E3E3E3;
   text-align: right;
   font-size: 100%;
 }
 .intro .texto-parrafo {
-  color: #ffffff;
+  color: #E3E3E3;
   font-size: 18px;
 }
 
@@ -68,53 +83,118 @@ h2 {
 }
 
 .footer {
-  background-color: #000000;
-  color: white;
-  padding-block: 20px;
+  background-color: #121212;
+  padding: 1em 0;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
-  border-top: #3e3e3e solid 1px;
-  margin-top: 100px;
+  color: #E3E3E3;
+  border-top: #3E3E3E solid 1px;
+  margin-top: auto;
 }
 
-.contenedor {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 0;
-  /* Flexbox */
+.conjuntocard {
+  padding: 50px;
   display: flex;
-  gap: 20px;
-  /* Grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  align-items: center;
 }
-.contenedor .card {
-  background-color: rgba(255, 255, 255, 0.0980392157) !important;
-  border-radius: 10px;
-  text-align: center;
-  min-height: 200px;
-  font-weight: bold;
+.conjuntocard .card {
+  background-color: #292929 !important;
+  color: #E3E3E3;
   padding: 20px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-.contenedor .card .card__imagen {
-  margin-bottom: 10px;
-}
-.contenedor .card h4 {
-  color: #b9b9b9;
+.conjuntocard .card .card-title {
+  text-align: center;
+  color: #E3E3E3;
 }
 
-.contenedor.card div,
-.contenedor div:hover {
-  width: 103%;
-  transition-duration: 200ms;
+.col1 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col2 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col3 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col4 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col5 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col6 div {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.conjuntocard.card div,
+.col div:hover {
+  background-color: #BB86FC !important;
+  width: 104%;
+  transition-duration: 1s;
 }
 
 .formulario {

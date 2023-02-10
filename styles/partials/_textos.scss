@@ -4,10 +4,11 @@ h1 {
     margin-left: 50px;
 }
 
-h2 {
-    color: $textcolor;
-    padding: 15px;
+.titulo {
+    -webkit-animation:tracking-in-expand 1.5s cubic-bezier(.68,-.55,.265,1.55) both;animation:tracking-in-expand 1.5s cubic-bezier(.68,-.55,.265,1.55) both
 }
+
+ @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
 .texto {
     .texto-lectura {

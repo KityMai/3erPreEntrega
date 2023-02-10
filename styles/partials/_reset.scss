@@ -5,6 +5,8 @@
     font-family: $mainfont;
 }
 body{
-    background-color: #121212 !important;
+    background-color: $maincolor !important;
+    display: grid;
     min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }

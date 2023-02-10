@@ -1,41 +1,56 @@
-.contenedor {
-    width: 90%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 40px 0;
-	/* Flexbox */
-	display: flex;
-	gap: 20px;
-    /* Grid */
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+.conjuntocard {
+    padding: 50px;
+    display: flex;
+    align-items: center;
 
     .card {
-        background-color: #ffffff19 !important;
-        border-radius: 10px;
-        text-align: center;
-        min-height: 200px;
-        font-weight: bold;
+        background-color: $secondarycolor !important;
+        color: $textcolor;
         padding: 20px;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        .card__imagen {
-            margin-bottom: 10px;
+        .card-title {
+            text-align: center;
+            color: $textcolor;
         }
+    }
 
-        h4 {
-            color: #b9b9b9;   
-        }
-    } 
 }
 
-.contenedor.card div,
-.contenedor div:hover{
-    width: 103%;
-    transition-duration: 200ms;
+// Animaciones
+.col1 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 1.5s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+.col2 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 2s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+.col3 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 2.5s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+.col4 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 3s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+.col5 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 3.5s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+.col6 div{
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 4s both
+}
+@keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+
+
+.conjuntocard.card div,
+.col div:hover{
+    background-color: $acentcolor !important;
+    width: 104%;
+    transition-duration: 1s;
 }
