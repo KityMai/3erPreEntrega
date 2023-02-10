@@ -54,6 +54,37 @@ h1 {
   width: 800px;
 }
 
+.servicios_contenido {
+  color: #E3E3E3;
+}
+.servicios_contenido .numero {
+  font-size: 12px;
+  line-height: 160%;
+}
+.servicios_contenido .subtitulo_servicios {
+  font-weight: 700;
+}
+.servicios_contenido .parrafo_servicios {
+  color: #B9B9B9;
+}
+.servicios_contenido ul.lista {
+  color: #B9B9B9;
+  -moz-column-count: 2;
+       column-count: 2;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
 .intro {
   padding: 60px;
   display: flex;
@@ -89,6 +120,31 @@ h1 {
   color: #E3E3E3;
   border-top: #3E3E3E solid 1px;
   margin-top: auto;
+}
+
+.conjuntoservicios {
+  margin-bottom: 200px;
+}
+.conjuntoservicios .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 200px;
+}
+.conjuntoservicios .grid .servicios_imagen {
+  padding-right: 20px;
+}
+.conjuntoservicios .grid .servicios_imagen img {
+  width: auto;
+  max-width: 70%;
+}
+.conjuntoservicios .grid .servicios_contenido {
+  display: grid;
+  grid-template-rows: auto;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: auto;
 }
 
 .conjuntocard {

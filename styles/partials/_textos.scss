@@ -19,3 +19,32 @@ h1 {
         width: 800px;
     }
 }
+
+.servicios_contenido {
+    color: $textcolor;
+
+    .numero {
+        font-size: 12px;
+        line-height: 160%;
+    }
+
+    .subtitulo_servicios {
+        font-weight: 700;
+    }
+
+    .parrafo_servicios {
+        color: $secondtxtcolor;
+    }
+
+    ul.lista {
+        color: $secondtxtcolor;
+        column-count: 2;
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+}
