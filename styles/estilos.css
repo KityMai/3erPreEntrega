@@ -111,6 +111,40 @@ h1 {
   color: #B9B9B9;
 }
 
+.intro_contenido {
+  color: #E3E3E3;
+}
+.intro_contenido .numero {
+  font-size: 14px;
+  text-transform: inherit 5;
+  letter-spacing: 0.15em;
+}
+.intro_contenido .subtitulo_home {
+  color: #BB86FC;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.intro_contenido .parrafo_home {
+  color: #B9B9B9;
+}
+.intro_contenido ul.lista {
+  -moz-column-count: 2;
+       column-count: 2;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
 .intro {
   padding: 60px;
   display: flex;
@@ -170,6 +204,21 @@ h1 {
   padding-right: 20px;
   padding-bottom: 10px;
   width: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 300px 50px 200px;
+  margin: 150px 0 200px 0;
+  align-items: center;
+}
+.grid .intro_imagen {
+  padding-right: 20px;
+}
+.grid .intro_imagen img {
+  width: auto;
+  max-width: 100%;
 }
 
 .conjuntocard {
