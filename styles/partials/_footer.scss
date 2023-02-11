@@ -2,7 +2,21 @@
     background-color: $maincolor;
     padding: 1em 0;
     text-align: center;
-    color: $textcolor;
+    color: $secondtxtcolor;
     border-top: $bordercolor solid 1px;
     margin-top: auto;
 }
+
+// .footer {
+//     display: grid;
+//     grid-template-rows: auto auto;
+//     align-items: center;
+
+//     .iconos {
+//         display: grid;
+//         grid-template-columns: auto auto auto auto auto;
+//         max-width: 100%;
+//         // padding: 0 700px 0 700px
+//         // gap: 20px;
+//     }
+// }
