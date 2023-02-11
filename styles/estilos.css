@@ -90,6 +90,27 @@ h1 {
           padding-inline-start: 40px;
 }
 
+.sobremi_destacado {
+  color: #E3E3E3;
+  letter-spacing: 0.05em;
+}
+.sobremi_destacado .destacado {
+  color: #BB86FC;
+}
+
+.sobremi_contenido {
+  color: #E3E3E3;
+}
+.sobremi_contenido .subtitulo_sobremi {
+  font-weight: 600;
+  color: #BB86FC;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.sobremi_contenido .parrafo_sobremi {
+  color: #B9B9B9;
+}
+
 .intro {
   padding: 60px;
   display: flex;
@@ -255,6 +276,38 @@ h1 {
   background-color: #BB86FC !important;
   width: 104%;
   transition-duration: 1s;
+}
+
+.conjuntosobremi {
+  margin-bottom: 200px;
+}
+.conjuntosobremi .gridsobremi {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 150px 300px 200px 300px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.conjuntosobremi .sobremi_imagen img {
+  width: auto;
+  max-width: 100%;
+}
+.conjuntosobremi .sobremi03 {
+  border: #3E3E3E solid 1px;
+  padding: 10px 0 10px 30px;
+}
+.conjuntosobremi .sobremi03 .certificado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.conjuntosobremi .sobremi04 {
+  border: #3E3E3E solid 1px;
+  padding: 10px 0 10px 30px;
+}
+.conjuntosobremi .sobremi04 .programas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .formulario {

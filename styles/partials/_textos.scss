@@ -53,3 +53,29 @@ h1 {
         padding-inline-start: 40px;
     }
 }
+
+.sobremi_destacado {
+    color: $textcolor;
+    letter-spacing: 0.05em;
+    
+    .destacado {
+        color: $acentcolor;
+    }
+}
+
+.sobremi_contenido {
+    color: $textcolor;
+
+    .subtitulo_sobremi {
+        font-weight: 600;
+        color: $acentcolor;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    .parrafo_sobremi {
+        color: $secondtxtcolor;
+    }    
+}
+
+

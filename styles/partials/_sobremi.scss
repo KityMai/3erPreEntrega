@@ -1,0 +1,39 @@
+.conjuntosobremi {
+    margin-bottom: 200px;
+
+    .gridsobremi {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        margin: 150px 300px 200px 300px;
+        column-gap: 50px;
+    }
+
+    .sobremi_imagen {
+            img {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    .sobremi03 {
+        border: $bordercolor solid 1px;
+        padding: 10px 0 10px 30px;
+
+        .certificado {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+    }
+
+    .sobremi04 {
+        border: $bordercolor solid 1px;
+        padding: 10px 0 10px 30px;
+
+        .programas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
