@@ -47,7 +47,7 @@
     </nav>
     <!-- fin navbar -->
   </header>
-  <main>
+  <main class="maincontacto">
     <div class="tituloh1">
       <h1 class="titulo">CONTACTAME</h1>
     </div>
@@ -55,23 +55,30 @@
       <p class="texto-lectura">Escribime si te gustaria que trabajemos juntos y coordinamos una entrevista.</p>
     </section>
     </div>
-
-    <section class="formulario">
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Nombre y/o empresa</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre personal o empresa">
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">Email</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: hola@contacto.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button class="btn btn-primary btn-light" type="submit">Enviar</button>
-    </section>
+    <!-- Inicio formulario -->
+    <div id="centrar">
+      <section class="formulario">
+        <div class="nombre">
+          <label for="formGroupExampleInput" class="form-label">Nombre y/o empresa</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre personal o empresa">
+        </div>
+        <div class="email">
+          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: hola@contacto.com">
+        </div>
+        <div class="mensaje">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <section class="boton">
+          <span class="botonenviar">ENVIAR</span>
+        </section>
+        <!-- <button class="btn primary">Enviar</button> -->
+      </section>
+    </div>
     
+    
+    <!-- Fin formulario -->
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

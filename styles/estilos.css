@@ -311,20 +311,44 @@ h1 {
 }
 
 .formulario {
-  width: 50%;
-  max-width: 500px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  max-width: 100%;
   margin: 50px;
-  padding: 40px 0;
+  padding: 40px;
   color: #ffffff;
-}
-.formulario .btn button,
-.formulario .btn button:hover {
-  color: #b9b9b9;
+  border: #BB86FC solid 1px;
 }
 
-.construccion {
+.boton {
   display: grid;
-  place-items: center;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.boton .botonenviar {
+  color: #E3E3E3 !important;
+  font-size: 18px;
+  font-weight: 350;
+  padding: 0.5em 1.2em;
+  background: #3E3E3E;
+  border-radius: 4px;
+}
+
+.botonenviar:hover {
+  color: #121212 !important;
+  font-weight: 500;
+  background: #BB86FC;
+  transition: all 0.2s ease;
+}
+
+#centrar {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.maincontacto {
+  align-content: center;
 }
 
 @media screen and (max-width: 768px) {
