@@ -1,16 +1,16 @@
 .grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     padding: 0 300px 50px 200px;
     margin: 150px 0 200px 0;
-    align-items: center;
+    // align-items: baseline;
     
 
     .intro_imagen {
         padding-right: 20px;
     
         img {
-            width: auto;
+            width: 100%;
             max-width: 100%;
         }
     }
